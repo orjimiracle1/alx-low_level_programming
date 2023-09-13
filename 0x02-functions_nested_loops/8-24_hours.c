@@ -1,26 +1,31 @@
 #include "main.h"
 
 /**
- * jack_bauer - The function name
- */
+  * jack_bauer - Prints every minute of the day of Jack Bauer
+  *
+  * Return: ...
+  */
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int a, b, c, d;
 
-	for (i = 0; i <= 2; i++)
+	for (a = 0; a <= 2; a++)
 	{
-		for (j = 0; j <= 3; j++)
+		for (b = 0; b <= 9; b++)
 		{
-			for (k = 0; k <= 5; k++)
+			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
 			{
-				for (l = 0; l <= 9; l++)
+				for (c = 0; c <= 5; c++)
 				{
-					_putchar(i + '0');
-					_putchar(j + '0');
-					_putchar(':');
-					_putchar(k + '0');
-					_putchar(l + '0');
-					_putchar('\n');
+					for (d = 0; d <= 9; d++)
+					{
+						_putchar(a + '0');
+						_putchar(b + '0');
+						_putchar(58);
+						_putchar(c + '0');
+						_putchar(d + '0');
+						_putchar('\n');
+					}
 				}
 			}
 		}
